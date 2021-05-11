@@ -17,6 +17,6 @@
     "webpack-node-externals": "^2.5.2"
   },
   "dependencies": {
-    "@cloudflare/wrangler": "^1.15.0"
+    "@cloudflare/wrangler": "^1.16.1"
   }
 }
