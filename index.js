@@ -35,9 +35,10 @@ async function handleRequest(request) {
       status: 404,
     })
   }
+  const clientIp = request.headers.get("CF-Connecting-IP")
   const query = requestUrl.query
   const hostname = query.hostname
-  const ip = query.ip
+  const ip = query.ip || clientIp
 
   // Initialize cloudflare
   const cf = new Cloudflare({
